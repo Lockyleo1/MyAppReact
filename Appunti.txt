@@ -1,0 +1,72 @@
+
+/**
+ * USEMEMO:
+ *
+ * FUORI DALLA FUNCTION:
+ * function calcolo (n:number){
+  console.log("esecuzione di calcolo con n: ",n)
+ return n*2;
+}
+ * FUORI DAL RETURN MA DENTRO LA FUNCTION:
+ * export default function App() {
+  const [value, setValue] = useState(10)
+
+  const risultatoCalcolo = useMemo(()=>{
+    return calcolo(value);
+  },[value]) ;
+  return<>
+    <div>risultato:{value}</div>
+    <div>risultato calcolo:{risultatoCalcolo}</div>
+  </>
+ }
+ *
+ * BOTTONE  CHE IMPOSTA UN VALORE:
+ *  <Counter initialValue={0} />
+    <button onClick={() => setValue(20)}>imposta a 20</button>
+    <div>value:{value}</div>
+ */
+
+
+//SALVA PERSONA CON NOME:
+// const SaveP = (person: { name: string; surname: string }) => {
+//   console.log('Persona salvata:', person);
+//   // Qui puoi gestire la logica per il salvataggio effettivo
+// };
+
+// return (
+//   <div>
+//     <h1>Applicazione</h1>
+//     <PersonInput onSave={SaveP} />
+//   </div>
+// );
+
+/**
+ *
+ * USE EFFECT:
+   * Se nello useEffect si definisce come lista di dipendenza l'array vuoto[],
+   * allora l'effetto viene invocato al mount del componente.
+   */
+
+// useEffect(() => {
+//   console.log("useEffect evento di mount!");
+//   return () => {console.log("useEffect evento di mount");}
+// }, []);
+
+// useEffect(() => {
+//   console.log("useEffect evento di mount2!");
+// }, []);
+
+// console.log("App()");
+
+
+/* <Counter /> */
+
+/*Differenza tra cambio di una prop qualsiasi e cambio di una prop key:
+
+  -se cambia una  prop qualsiasi, il componente viene ridisegnato.
+  -se cambia la prop key, il componente viene reinizializzato 
+    (tutti gli stati tornano al valore iniziale)
+ 
+ 
+*/
+/* <IntervalComponent/> */

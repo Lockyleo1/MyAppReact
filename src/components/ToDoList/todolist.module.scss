@@ -1,0 +1,59 @@
+.todolistitemcontainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.todoitem {
+  margin-right: 8px;
+}
+
+.deletebutton {
+  margin-left: 8px;
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.additembutton {
+  height: 40px;
+  font-size: 16px;
+}
+
+.listitemaddercontainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.additeminput {
+  flex: 1;
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.todolistcontainer {
+  margin-bottom: 16px;
+}
+
+.resetbutton {
+  margin-left: 50%;
+  color: white;
+  background-color: rgb(8, 0, 255);
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.todolistitemtext {
+  flex: 50%;
+  border: 1px solid black; 
+  padding: 8px; 
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: flex-start;
+}
